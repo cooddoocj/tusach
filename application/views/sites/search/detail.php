@@ -9,7 +9,7 @@
 	<div class="col-lg-4 my-lg-4 col-md-6 my-md-3 col-xs-12 my-2">
 		<div class="clearfix">
 			<div class="float-left mr-3" style="width: 4.5rem;">
-				<img class="d-block lazyload" data-src="<?php echo str_replace('/s1600/', '/w72/', $post['featured_image']); ?>" alt="<?php echo $post['title'] ?>">
+				<a rel="nofollow" href="<?php echo base_url('ebook/' . $post['slug']); ?>" title="<?php echo $post['title'] ?>"><img class="d-block lazyload" data-src="<?php echo str_replace('/s1600/', '/w72/', $post['featured_image']); ?>" alt="<?php echo $post['title'] ?>"></a>
 			</div>
 			<div class="float-left" style="width: calc(100% - 5.5rem)">
 				<h3 class="h6 p-0"><a class="font-weight-normal" href="<?php echo base_url('ebook/' . $post['slug']); ?>" title="<?php echo $post['title'] ?>"><?php echo $post['title'] ?></a></h3>
