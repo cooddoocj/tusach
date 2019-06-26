@@ -85,7 +85,7 @@ class Search extends MY_Controller {
 			$result = $this->search_model->get_posts_by_search($tukhoa, 5);
 
 			if ($result) {
-				if (mb_strlen($tukhoa, 'UTF-8') > 3) {
+				if (mb_strlen($tukhoa, 'UTF-8') > 1) {
 					foreach ($result as $row):
 						?>
 						<li class="list-group-item px-2 py-1">
